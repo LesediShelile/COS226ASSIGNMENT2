@@ -4,3 +4,4 @@ public interface Queue<T> {
 
     T deq();
 }
+
