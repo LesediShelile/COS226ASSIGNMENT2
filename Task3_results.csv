@@ -1,0 +1,7 @@
+queue,producers,consumers,workload,jobs_per_producer,median_ms,min_ms,max_ms,throughput_jobs_per_sec
+bounded,4,4,balanced,3000,16.570,11.790,22.630,724204
+lockfree,4,4,balanced,3000,7.068,4.282,15.732,1697876
+bounded,6,2,producer-heavy,2000,8.478,4.945,18.440,1415503
+lockfree,6,2,producer-heavy,2000,2.889,2.521,3.606,4153625
+bounded,2,6,consumer-heavy,6000,6.034,4.893,11.788,1988800
+lockfree,2,6,consumer-heavy,6000,5.825,4.488,7.853,2060209
