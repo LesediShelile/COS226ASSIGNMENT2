@@ -76,9 +76,9 @@ public class Experiment {
         String hdr = String.format("%-9s %-5s %-5s %-15s %-10s %-12s %-18s %-14s",
                 "Queue", "Prod", "Cons", "Workload", "Jobs/prod", "Median (ms)", "Min-Max (ms)", "Throughput/s");
         System.out.println(hdr);
-        char[] line = new char[hdr.length()];
-        Arrays.fill(line, '-');
-        System.out.println(new String(line));
+        StringBuilder line = new StringBuilder();
+        for (int i = 0; i < hdr.length(); i++) line.append('-');
+        System.out.println(line);
 
         for (int ci = 0; ci < CONFIGS.length; ci++) {
             for (String q : QUEUES) {
